@@ -11,7 +11,11 @@
 </head>
 <body>
     <div class="container">
-        <iframe height="550" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        {% if titulo != 'Cazuza - O Tempo Não Para': %}
+            <iframe height="550" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        {% else: %}
+            <iframe height="550" src="https://www.youtube.com/embed/_Jcn10Iiuu4"></iframe>
+        {% endif %}
         <h1>{{titulo}}</h1>
         <small>1.000.000 visualizações</small>
         <div class="like_btn">
