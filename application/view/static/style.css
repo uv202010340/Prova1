@@ -1,0 +1,50 @@
+body{
+    background-color: lightblue;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+
+.section_cat{
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.title_cat{
+    background-image: url('images/default.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.row{
+    justify-content: space-around;
+    --bs-gutter-x: 0;
+}
+
+.row>*{
+    padding: initial;
+}
+
+.card{
+    margin: 1rem 0;
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}

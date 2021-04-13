@@ -1,7 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=os.path.abspath('application/view/static'), template_folder=os.path.abspath('application/view/templates'))
 
 @app.route("/")
-def hello():
-    return "<h1>Hello World!</h1>"
+def home():
+    return render_template("home.html")
+
+@app.route("/video/")
+def video():
+    return render_template("video.html")
